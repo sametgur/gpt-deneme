@@ -1,0 +1,313 @@
+{
+  "common": {
+    "menu": "Menü",
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "menu": "Menü",
+    "gallery": "Galeri",
+    "contact": "İletişim",
+    "blog": "Blog",
+    "reservation": "Rezervasyon",
+    "language": "Dil",
+    "address": "Akyaka Mahallesi, Azmak Caddesi No:24, 48650 Akyaka/Muğla",
+    "phone": "+90 532 236 75 39",
+    "email": "info@cennetrestaurant.com.tr",
+    "openingHours": "Açılış Saatleri",
+    "openingHoursValue": "Her gün 09:00 - 23:00",
+    "followUs": "Bizi Takip Edin",
+    "allRightsReserved": "Tüm Hakları Saklıdır",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Kullanım Koşulları"
+  },
+  "home": {
+    "hero": {
+      "title": "Akyaka'nın En İyi Restoranı",
+      "subtitle": "Azmak Nehri'nin eşsiz manzarası eşliğinde unutulmaz bir lezzet deneyimi",
+      "cta": "Rezervasyon Yap"
+    },
+    "welcome": {
+      "title": "Cennet Restaurant'a Hoş Geldiniz",
+      "subtitle": "Akyaka'nın Kalbinde Eşsiz Bir Deneyim",
+      "description": "Cennet Restaurant, Akyaka'nın kalbinde, Azmak Nehri'nin berrak sularının üzerinde konumlanmış eşsiz bir mekândır. Taze deniz ürünleri, geleneksel Türk mutfağı ve Ege lezzetleri ile misafirlerimize unutulmaz bir deneyim sunuyoruz.",
+      "cta": "Hakkımızda"
+    },
+    "specialties": {
+      "title": "Özel Lezzetlerimiz",
+      "subtitle": "Şefimizin Önerileri",
+      "viewMenu": "Menüyü Görüntüle",
+      "items": [
+        {
+          "title": "Deniz Ürünleri",
+          "description": "Günlük taze deniz ürünleri, özel soslar ve baharatlarla hazırlanır."
+        },
+        {
+          "title": "Izgara Çeşitleri",
+          "description": "En kaliteli etler, özel marine soslarıyla ızgarada pişirilir."
+        },
+        {
+          "title": "Geleneksel Mezeler",
+          "description": "Ev yapımı, taze malzemelerle hazırlanan geleneksel mezeler."
+        },
+        {
+          "title": "Tatlılar",
+          "description": "Geleneksel Türk tatlıları, modern sunumlarla servis edilir."
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Galeri",
+      "subtitle": "Restoranımızdan Kareler",
+      "viewMore": "Daha Fazla Görüntüle"
+    },
+    "testimonials": {
+      "title": "Müşteri Yorumları",
+      "subtitle": "Misafirlerimiz Ne Diyor?"
+    },
+    "reservation": {
+      "title": "Rezervasyon",
+      "subtitle": "Masanızı Ayırtın",
+      "name": "Adınız",
+      "email": "E-posta Adresiniz",
+      "phone": "Telefon Numaranız",
+      "date": "Tarih",
+      "time": "Saat",
+      "guests": "Kişi Sayısı",
+      "message": "Mesajınız",
+      "submit": "Rezervasyon Yap",
+      "success": "Rezervasyonunuz alınmıştır. En kısa sürede sizinle iletişime geçeceğiz.",
+      "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Hakkımızda",
+      "subtitle": "Cennet Restaurant'ın Hikayesi"
+    },
+    "story": {
+      "title": "Hikayemiz",
+      "subtitle": "Nasıl Başladık?",
+      "description": "Cennet Restaurant, 1995 yılında Akyaka'nın eşsiz doğal güzellikleri içerisinde, Azmak Nehri'nin kıyısında kurulmuştur. Kurucumuz Kemal Şahin, deniz ürünlerine olan tutkusu ve misafirperverliği ile kısa sürede bölgenin en sevilen restoranlarından biri haline gelmiştir. Yıllar içinde büyüyen ve gelişen restoranımız, bugün ikinci ve üçüncü nesil aile üyeleri tarafından aynı özen ve tutkuyla işletilmeye devam etmektedir."
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Misafirlerimize sadece bir yemek değil, tüm duyularına hitap eden eşsiz bir deneyim sunmak. Taze ve kaliteli malzemelerle hazırlanan lezzetli yemekler, profesyonel ve samimi hizmet anlayışı ve eşsiz manzara eşliğinde unutulmaz anlar yaşatmak."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Türk mutfağını ve Ege lezzetlerini en iyi şekilde temsil eden, yerel ve uluslararası misafirler tarafından tercih edilen, sürdürülebilir ve çevre dostu bir işletme olmak."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "items": [
+        {
+          "title": "Kalite",
+          "description": "En taze ve kaliteli malzemeleri kullanarak, her tabağı bir sanat eseri gibi hazırlıyoruz."
+        },
+        {
+          "title": "Misafirperverlik",
+          "description": "Her misafirimizi ailemizin bir parçası olarak görüyor ve en iyi şekilde ağırlıyoruz."
+        },
+        {
+          "title": "Sürdürülebilirlik",
+          "description": "Doğaya saygılı, sürdürülebilir uygulamalarla çevreyi koruyoruz."
+        },
+        {
+          "title": "Yenilikçilik",
+          "description": "Geleneksel lezzetleri korurken, modern teknikler ve sunumlarla kendimizi sürekli yeniliyoruz."
+        }
+      ]
+    },
+    "team": {
+      "title": "Ekibimiz",
+      "subtitle": "Profesyonel Kadromuz",
+      "members": [
+        {
+          "name": "Ahmet Cennet",
+          "position": "Şef Aşçı",
+          "description": "20 yıllık deneyimiyle Türk ve Ege mutfağının ustası."
+        },
+        {
+          "name": "Ayşe Cennet",
+          "position": "İşletme Müdürü",
+          "description": "Misafir memnuniyeti ve kalite standartlarının garantörü."
+        },
+        {
+          "name": "Mehmet Yılmaz",
+          "position": "Servis Şefi",
+          "description": "Profesyonel servis anlayışı ve güler yüzüyle tanınır."
+        }
+      ]
+    }
+  },
+  "menu": {
+    "hero": {
+      "title": "Menümüz",
+      "subtitle": "Özenle Hazırlanan Lezzetler"
+    },
+    "categories": {
+      "breakfast": "Kahvaltı",
+      "starters": "Başlangıçlar",
+      "mainCourses": "Ana Yemekler",
+      "seafood": "Deniz Ürünleri",
+      "desserts": "Tatlılar",
+      "drinks": "İçecekler"
+    },
+    "items": {
+      "breakfast": [
+        {
+          "name": "Serpme Kahvaltı",
+          "description": "Zengin içerikli geleneksel Türk kahvaltısı",
+          "price": "₺150"
+        },
+        {
+          "name": "Menemen",
+          "description": "Domates, biber ve yumurta ile hazırlanan geleneksel Türk yemeği",
+          "price": "₺60"
+        },
+        {
+          "name": "Simit & Peynir",
+          "description": "Taze simit, beyaz peynir, domates, salatalık ve zeytin",
+          "price": "₺50"
+        }
+      ],
+      "starters": [
+        {
+          "name": "Zeytinyağlı Yaprak Sarma",
+          "description": "Asma yaprağına sarılmış pirinç, çam fıstığı ve baharatlar",
+          "price": "₺70"
+        },
+        {
+          "name": "Humus",
+          "description": "Nohut, tahin, zeytinyağı ve baharatlarla hazırlanan meze",
+          "price": "₺60"
+        },
+        {
+          "name": "Cacık",
+          "description": "Yoğurt, salatalık, sarımsak ve nane ile hazırlanan soğuk meze",
+          "price": "₺50"
+        }
+      ],
+      "mainCourses": [
+        {
+          "name": "Kuzu Tandır",
+          "description": "Özel baharatlarla marine edilmiş, fırında pişirilmiş kuzu eti",
+          "price": "₺180"
+        },
+        {
+          "name": "Patlıcan Kebabı",
+          "description": "Közlenmiş patlıcan üzerinde kuzu eti, özel sos ile",
+          "price": "₺160"
+        },
+        {
+          "name": "Akyaka Güveç",
+          "description": "Yöresel otlar, sebzeler ve et ile hazırlanan özel güveç",
+          "price": "₺150"
+        }
+      ],
+      "seafood": [
+        {
+          "name": "Izgara Çipura",
+          "description": "Akyaka'nın taze çipurası, mevsim yeşillikleri ve limon ile servis edilir",
+          "price": "₺200"
+        },
+        {
+          "name": "Karides Güveç",
+          "description": "Taze karides, sarımsak, domates ve özel sosumuz ile hazırlanır",
+          "price": "₺220"
+        },
+        {
+          "name": "Ahtapot Izgara",
+          "description": "Marine edilmiş ahtapot, zeytinyağlı patates püresi üzerinde servis edilir",
+          "price": "₺240"
+        }
+      ],
+      "desserts": [
+        {
+          "name": "Baklava",
+          "description": "İnce yufka, ceviz ve özel şerbet ile hazırlanan geleneksel Türk tatlısı",
+          "price": "₺80"
+        },
+        {
+          "name": "Sütlaç",
+          "description": "Fırında pişirilmiş geleneksel Türk sütlü tatlısı",
+          "price": "₺70"
+        },
+        {
+          "name": "Kabak Tatlısı",
+          "description": "Bal, ceviz ve kaymak ile servis edilen kabak tatlısı",
+          "price": "₺70"
+        }
+      ],
+      "drinks": [
+        {
+          "name": "Türk Çayı",
+          "description": "Geleneksel demlenmiş Türk çayı",
+          "price": "₺15"
+        },
+        {
+          "name": "Türk Kahvesi",
+          "description": "Geleneksel Türk kahvesi, lokum ile servis edilir",
+          "price": "₺30"
+        },
+        {
+          "name": "Ayran",
+          "description": "Geleneksel Türk yoğurt içeceği",
+          "price": "₺20"
+        }
+      ]
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Galeri",
+      "subtitle": "Restoranımızdan Kareler"
+    },
+    "categories": {
+      "all": "Tümü",
+      "restaurant": "Restoran",
+      "food": "Yemekler",
+      "events": "Etkinlikler"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "İletişim",
+      "subtitle": "Bize Ulaşın"
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "address": "Adres",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "openingHours": "Açılış Saatleri"
+    },
+    "form": {
+      "title": "Mesaj Gönderin",
+      "name": "Adınız",
+      "email": "E-posta Adresiniz",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "submit": "Gönder",
+      "success": "Mesajınız alınmıştır. En kısa sürede size dönüş yapacağız.",
+      "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+    },
+    "location": {
+      "title": "Konumumuz"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Akyaka'nın lezzetleri, yöresel tarifler, gastronomi hikayeleri ve daha fazlası",
+    "description": "Cennet Restaurant'ın blogunda Akyaka'nın lezzetleri, yöresel tarifler, gastronomi hikayeleri ve daha fazlasını keşfedin.",
+    "keywords": "Cennet Restaurant blog, Akyaka gastronomi, Akyaka yemek kültürü, Akyaka deniz ürünleri, Türk mutfağı blog",
+    "readMore": "Devamını Oku",
+    "allCategories": "Tüm Kategoriler",
+    "noPosts": "Henüz blog yazısı bulunmamaktadır.",
+    "noPostsInCategory": "{category} kategorisinde henüz blog yazısı bulunmamaktadır.",
+    "backToAllPosts": "Tüm Yazılara Dön",
+    "backToBlog": "Blog'a Dön",
+    "relatedPosts": "İlgili Yazılar",
+    "categoryDescription": "Cennet Restaurant Blog -",
+    "categorySubtitle": "{category} kategorisindeki yazılar"
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "common": {
+    "menu": "Menü",
+    "home": "Startseite",
+    "about": "Über uns",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "reservation": "Reservierung",
+    "language": "Sprache",
+    "address": "Akyaka Mahallesi, Azmak Caddesi No:24, 48650 Akyaka/Muğla",
+    "phone": "+90 532 236 75 39",
+    "email": "info@cennetrestaurant.com.tr",
+    "openingHours": "Öffnungszeiten",
+    "openingHoursValue": "Täglich 09:00 - 23:00",
+    "followUs": "Folgen Sie uns",
+    "allRightsReserved": "Alle Rechte vorbehalten",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen"
+  },
+  "home": {
+    "hero": {
+      "title": "Das beste Restaurant in Akyaka",
+      "subtitle": "Ein unvergessliches kulinarisches Erlebnis mit dem einzigartigen Blick auf den Azmak-Fluss",
+      "cta": "Reservierung vornehmen"
+    },
+    "welcome": {
+      "title": "Willkommen im Cennet Restaurant",
+      "subtitle": "Ein einzigartiges Erlebnis im Herzen von Akyaka",
+      "description": "Das Cennet Restaurant ist ein einzigartiger Ort im Herzen von Akyaka, über den klaren Gewässern des Azmak-Flusses. Wir bieten unseren Gästen ein unvergessliches Erlebnis mit frischen Meeresfrüchten, traditioneller türkischer Küche und ägäischen Aromen.",
+      "cta": "Über uns"
+    },
+    "specialties": {
+      "title": "Unsere Spezialitäten",
+      "subtitle": "Empfehlungen des Küchenchefs",
+      "viewMenu": "Speisekarte ansehen",
+      "items": [
+        {
+          "title": "Meeresfrüchte",
+          "description": "Täglich frische Meeresfrüchte, zubereitet mit speziellen Saucen und Gewürzen."
+        },
+        {
+          "title": "Gegrillte Spezialitäten",
+          "description": "Fleisch höchster Qualität, gegrillt mit speziellen Marinaden."
+        },
+        {
+          "title": "Traditionelle Vorspeisen",
+          "description": "Hausgemachte traditionelle Vorspeisen, zubereitet mit frischen Zutaten."
+        },
+        {
+          "title": "Desserts",
+          "description": "Traditionelle türkische Desserts, serviert mit modernen Präsentationen."
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Galerie",
+      "subtitle": "Bilder aus unserem Restaurant",
+      "viewMore": "Mehr anzeigen"
+    },
+    "testimonials": {
+      "title": "Kundenbewertungen",
+      "subtitle": "Was sagen unsere Gäste?"
+    },
+    "reservation": {
+      "title": "Reservierung",
+      "subtitle": "Buchen Sie Ihren Tisch",
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "phone": "Ihre Telefonnummer",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "guests": "Anzahl der Gäste",
+      "message": "Ihre Nachricht",
+      "submit": "Reservierung vornehmen",
+      "success": "Ihre Reservierung ist eingegangen. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Über uns",
+      "subtitle": "Die Geschichte des Cennet Restaurants"
+    },
+    "story": {
+      "title": "Unsere Geschichte",
+      "subtitle": "Wie wir angefangen haben?",
+      "description": "Das Cennet Restaurant wurde 1995 inmitten der einzigartigen Naturschönheiten von Akyaka, am Ufer des Azmak-Flusses, gegründet. Unser Gründer, Kemal Şahin, wurde schnell zu einem der beliebtesten Restaurants in der Region mit seiner Leidenschaft für Meeresfrüchte und Gastfreundschaft. Unser Restaurant, das im Laufe der Jahre gewachsen und sich entwickelt hat, wird heute weiterhin mit der gleichen Sorgfalt und Leidenschaft von Familienmitgliedern der zweiten und dritten Generation betrieben."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Unseren Gästen nicht nur eine Mahlzeit, sondern ein einzigartiges Erlebnis zu bieten, das alle ihre Sinne anspricht. Unvergessliche Momente zu schaffen mit köstlichem Essen, das mit frischen und hochwertigen Zutaten zubereitet wird, professionellem und freundlichem Service und einer einzigartigen Aussicht."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Ein nachhaltiges und umweltfreundliches Unternehmen zu sein, das die türkische Küche und ägäische Aromen am besten repräsentiert und von lokalen und internationalen Gästen bevorzugt wird."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "items": [
+        {
+          "title": "Qualität",
+          "description": "Wir bereiten jedes Gericht wie ein Kunstwerk zu, indem wir die frischesten und hochwertigsten Zutaten verwenden."
+        },
+        {
+          "title": "Gastfreundschaft",
+          "description": "Wir betrachten jeden unserer Gäste als Teil unserer Familie und bewirten sie bestmöglich."
+        },
+        {
+          "title": "Nachhaltigkeit",
+          "description": "Wir schützen die Umwelt mit naturfreundlichen, nachhaltigen Praktiken."
+        },
+        {
+          "title": "Innovation",
+          "description": "Während wir traditionelle Aromen bewahren, erneuern wir uns ständig mit modernen Techniken und Präsentationen."
+        }
+      ]
+    },
+    "team": {
+      "title": "Unser Team",
+      "subtitle": "Unser professionelles Personal",
+      "members": [
+        {
+          "name": "Ahmet Cennet",
+          "position": "Küchenchef",
+          "description": "Meister der türkischen und ägäischen Küche mit 20 Jahren Erfahrung."
+        },
+        {
+          "name": "Ayşe Cennet",
+          "position": "Betriebsleiterin",
+          "description": "Garantin für Gästezufriedenheit und Qualitätsstandards."
+        },
+        {
+          "name": "Mehmet Yılmaz",
+          "position": "Serviceleiter",
+          "description": "Bekannt für seinen professionellen Serviceansatz und sein freundliches Auftreten."
+        }
+      ]
+    }
+  },
+  "menu": {
+    "hero": {
+      "title": "Unsere Speisekarte",
+      "subtitle": "Sorgfältig zubereitete Aromen"
+    },
+    "categories": {
+      "breakfast": "Frühstück",
+      "starters": "Vorspeisen",
+      "mainCourses": "Hauptgerichte",
+      "seafood": "Meeresfrüchte",
+      "desserts": "Desserts",
+      "drinks": "Getränke"
+    },
+    "items": {
+      "breakfast": [
+        {
+          "name": "Türkisches Frühstück",
+          "description": "Traditionelles türkisches Frühstück mit reichhaltigem Inhalt",
+          "price": "₺150"
+        },
+        {
+          "name": "Menemen",
+          "description": "Traditionelles türkisches Gericht, zubereitet mit Tomaten, Paprika und Eiern",
+          "price": "₺60"
+        },
+        {
+          "name": "Simit & Käse",
+          "description": "Frischer Simit, Weißkäse, Tomaten, Gurken und Oliven",
+          "price": "₺50"
+        }
+      ],
+      "starters": [
+        {
+          "name": "Gefüllte Weinblätter",
+          "description": "Reis, Pinienkerne und Gewürze, eingewickelt in Weinblätter",
+          "price": "₺70"
+        },
+        {
+          "name": "Hummus",
+          "description": "Vorspeise, zubereitet mit Kichererbsen, Tahini, Olivenöl und Gewürzen",
+          "price": "₺60"
+        },
+        {
+          "name": "Cacık",
+          "description": "Kalte Vorspeise, zubereitet mit Joghurt, Gurke, Knoblauch und Minze",
+          "price": "₺50"
+        }
+      ],
+      "mainCourses": [
+        {
+          "name": "Lamm Tandoori",
+          "description": "Lammfleisch, mariniert mit speziellen Gewürzen, im Ofen gebacken",
+          "price": "₺180"
+        },
+        {
+          "name": "Auberginen-Kebab",
+          "description": "Lammfleisch auf gerösteter Aubergine, mit spezieller Sauce",
+          "price": "₺160"
+        },
+        {
+          "name": "Akyaka-Eintopf",
+          "description": "Spezialität des Hauses, zubereitet mit saisonalem Gemüse und Fleisch",
+          "price": "₺150"
+        }
+      ],
+      "seafood": [
+        {
+          "name": "Gegrillter Oktopus",
+          "description": "Oktopus, gegrillt mit Olivenöl und Zitrone",
+          "price": "₺200"
+        },
+        {
+          "name": "Knusprige Calamari",
+          "description": "Frittierte Calamari, serviert mit Knoblauchsauce",
+          "price": "₺160"
+        },
+        {
+          "name": "Fisch des Tages",
+          "description": "Täglich frischer Fisch, gegrillt oder gebacken",
+          "price": "₺220"
+        }
+      ],
+      "desserts": [
+        {
+          "name": "Baklava",
+          "description": "Traditionelles türkisches Dessert mit Pistazien",
+          "price": "₺80"
+        },
+        {
+          "name": "Künefe",
+          "description": "Warmes Dessert, zubereitet mit Käse und Teigfäden",
+          "price": "₺90"
+        },
+        {
+          "name": "Fruchtsorbet",
+          "description": "Hausgemachtes Sorbet aus saisonalen Früchten",
+          "price": "₺60"
+        }
+      ],
+      "drinks": [
+        {
+          "name": "Türkischer Tee",
+          "description": "Traditioneller schwarzer Tee, serviert im Teeglas",
+          "price": "₺15"
+        },
+        {
+          "name": "Türkischer Kaffee",
+          "description": "Traditioneller türkischer Kaffee, serviert mit Lokum",
+          "price": "₺30"
+        },
+        {
+          "name": "Ayran",
+          "description": "Traditionelles türkisches Joghurtgetränk",
+          "price": "₺20"
+        }
+      ]
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Galerie",
+      "subtitle": "Bilder aus unserem Restaurant"
+    },
+    "categories": {
+      "restaurant": "Restaurant",
+      "food": "Essen",
+      "akyaka": "Akyaka"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontakt",
+      "subtitle": "Kontaktieren Sie uns"
+    },
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "submit": "Senden",
+      "success": "Ihre Nachricht ist eingegangen. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "address": "Adresse",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "openingHours": "Öffnungszeiten"
+    },
+    "location": {
+      "title": "Standort",
+      "description": "Unser Restaurant befindet sich im Herzen von Akyaka, am Ufer des Azmak-Flusses."
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Neuigkeiten und Artikel"
+    },
+    "categories": {
+      "all": "Alle",
+      "food": "Essen",
+      "travel": "Reisen",
+      "culture": "Kultur"
+    },
+    "readMore": "Weiterlesen",
+    "relatedPosts": "Ähnliche Beiträge",
+    "comments": "Kommentare",
+    "leaveComment": "Hinterlassen Sie einen Kommentar",
+    "commentName": "Ihr Name",
+    "commentEmail": "Ihre E-Mail",
+    "commentMessage": "Ihre Nachricht",
+    "commentSubmit": "Kommentar senden",
+    "share": "Teilen",
+    "search": "Suchen",
+    "searchPlaceholder": "Suchen Sie nach Artikeln...",
+    "noResults": "Keine Ergebnisse gefunden.",
+    "featuredPosts": "Empfohlene Beiträge",
+    "recentPosts": "Neueste Beiträge",
+    "popularTags": "Beliebte Tags",
+    "archives": "Archive"
+  },
+  "error": {
+    "notFound": "Seite nicht gefunden",
+    "goHome": "Zur Startseite"
+  },
+  "akyakaFeature": {
+    "inTheHeartOfAkyaka": "Im Herzen von Akyaka",
+    "discoverAkyaka": "Entdecken Sie Akyaka",
+    "akyakaDescription": "Akyaka ist ein malerisches Dorf an der türkischen Ägäisküste, bekannt für seine einzigartige Architektur, den Azmak-Fluss und die atemberaubende Natur. Unser Restaurant befindet sich im Herzen dieses wunderschönen Ortes und bietet Ihnen ein unvergessliches kulinarisches Erlebnis mit Blick auf den Fluss."
+  },
+  "featuredDishes": {
+    "title": "Unsere Spezialitäten",
+    "subtitle": "Empfehlungen des Küchenchefs",
+    "viewMenu": "Speisekarte ansehen",
+    "dishes": [
+      {
+        "name": "Gegrillter Oktopus",
+        "description": "Oktopus, gegrillt mit Olivenöl und Zitrone",
+        "price": "₺200"
+      },
+      {
+        "name": "Lamm Tandoori",
+        "description": "Lammfleisch, mariniert mit speziellen Gewürzen, im Ofen gebacken",
+        "price": "₺180"
+      },
+      {
+        "name": "Knusprige Calamari",
+        "description": "Frittierte Calamari, serviert mit Knoblauchsauce",
+        "price": "₺160"
+      },
+      {
+        "name": "Auberginen-Kebab",
+        "description": "Lammfleisch auf gerösteter Aubergine, mit spezieller Sauce",
+        "price": "₺160"
+      }
+    ]
+  }
+}
