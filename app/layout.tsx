@@ -1,43 +1,17 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Lusitana, Playfair_Display } from "next/font/google"
+import { Inter } from "next/font/google"
 import "./globals.css"
 
 import { ThemeProvider } from "@/components/theme-provider"
 import { FloatingContactButtons, FloatingWhatsappButton } from "@/components/floating-contact-buttons"
+import { Toaster } from "@/components/ui/toaster" // Toaster'ı doğru yerden içe aktar
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-serif",
-})
-
-const lusitana = Lusitana({ subsets: ["latin"], weight: ["400", "700"] })
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Cennet Restaurant Akyaka | Eşsiz Deniz Ürünleri ve Türk Mutfağı",
-  description: "Akyaka'da eşsiz lezzetler ve muhteşem manzara",
-  keywords:
-    "Akyaka restoran, deniz ürünleri, Türk mutfağı, Muğla restoran, Akyaka yemek, balık restoran, Cennet Restaurant",
-  openGraph: {
-    title: "Cennet Restaurant Akyaka | Eşsiz Deniz Ürünleri ve Türk Mutfağı",
-    description:
-      "Akyaka'nın kalbinde, suyun üzerinde konumlanmış Cennet Restaurant'ta taze deniz ürünleri ve geleneksel Türk mutfağının eşsiz lezzetlerini keşfedin.",
-    images: [
-      {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6268_2b1cd5e4-5d47-4ff3-9f84-6f21acb084eb.jpg-UGrMufDqeFK2GfoBbgM1s91i42cmZD.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Cennet Restaurant Akyaka",
-      },
-    ],
-    locale: "tr_TR",
-    type: "website",
-  },
+  title: "Cennet Restaurant",
+  description: "Akyaka'da eşsiz lezzetler ve huzurlu bir atmosfer.",
     generator: 'v0.dev'
 }
 
@@ -47,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="tr" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
@@ -99,12 +73,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${playfair.variable} font-sans`}>
+      <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
         <FloatingContactButtons />
         <FloatingWhatsappButton />
+        <Toaster /> {/* Toaster bileşenini buraya ekle */}
       </body>
     </html>
   )
