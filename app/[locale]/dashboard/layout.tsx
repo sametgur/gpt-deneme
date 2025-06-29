@@ -1,7 +1,7 @@
 import type React from "react"
 import Link from "next/link"
 import { Home, Utensils } from "lucide-react"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card" // Card bileşenlerini içe aktar
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 
 export default function DashboardLayout({
   children,
@@ -26,7 +26,7 @@ export default function DashboardLayout({
             Dashboard
           </Link>
           <Link
-            href="/dashboard" // Currently points to dashboard, could be a sub-page for menu editing
+            href="/dashboard"
             className="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
           >
             <Utensils className="h-4 w-4" />
@@ -40,8 +40,6 @@ export default function DashboardLayout({
         </header>
         <main className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8">
           <Card>
-            {" "}
-            {/* Card bileşenini burada kullan */}
             <CardHeader>
               <CardTitle className="text-2xl font-bold">Yönetici Paneli</CardTitle>
             </CardHeader>

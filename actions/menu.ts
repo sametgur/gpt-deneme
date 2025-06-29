@@ -1,37 +1,54 @@
 "use server"
 
-import { menuData } from "@/lib/menu-data"
+import { menuData, type MenuItem } from "@/lib/menu-data"
 
-export async function updateMenuPrices(formData: FormData) {
-  // Simulate a delay for network request
-  await new Promise((resolve) => setTimeout(resolve, 500))
+interface UpdatePricePayload {
+  id: string
+  price: number
+}
 
-  const updatedPrices: { id: string; price: number }[] = []
+export async function updateMenuPrices(
+  updatedItems: UpdatePricePayload[],
+): Promise<{ success: boolean; message: string }> {
+  await new Promise((resolve) => setTimeout(resolve, 1000)) // Simulate network delay
 
-  for (const [key, value] of formData.entries()) {
-    if (key.startsWith("price-")) {
-      const itemId = key.replace("price-", "")
-      const price = Number.parseFloat(value as string)
-      if (!isNaN(price)) {
-        updatedPrices.push({ id: itemId, price })
+  try {
+    updatedItems.forEach((updatedItem) => {
+      let found = false
+      for (const category of menuData) {
+        const itemIndex = category.items.findIndex((item) => item.id === updatedItem.id)
+        if (itemIndex !== -1) {
+          category.items[itemIndex].price = updatedItem.price
+          found = true
+          break
+        }
       }
-    }
+      if (!found) {
+        console.warn(`Menü öğesi bulunamadı: ${updatedItem.id}`)
+      }
+    })
+
+    console.log("Menü fiyatları başarıyla güncellendi (simüle edildi).")
+    // In a real application, you would save this to a database.
+    // For example: await db.saveMenuData(menuData);
+    return { success: true, message: "Menü fiyatları başarıyla güncellendi!" }
+  } catch (error) {
+    console.error("Menü fiyatları güncellenirken hata oluştu:", error)
+    return { success: false, message: "Menü fiyatları güncellenirken bir hata oluştu." }
   }
+}
 
-  // In a real application, you would update your database here.
-  // For this example, we'll just log the updates.
-  console.log("Updating menu prices:", updatedPrices)
+export async function getMenuItems(): Promise<MenuItem[]> {
+  await new Promise((resolve) => setTimeout(resolve, 500)) // Simulate network delay
 
-  // Find and update prices in the in-memory menuData (for demonstration purposes)
-  updatedPrices.forEach((updatedItem) => {
-    for (const category of menuData) {
-      const item = category.items.find((item) => item.id === updatedItem.id)
-      if (item) {
-        item.price = updatedItem.price
-        break // Found the item, move to the next updatedItem
-      }
-    }
+  const allItems: MenuItem[] = []
+  menuData.forEach((category) => {
+    category.items.forEach((item) => {
+      allItems.push({
+        ...item,
+        category: category.name.tr, // Use Turkish category name for display in dashboard
+      })
+    })
   })
-
-  return { success: true, message: "Menü fiyatları başarıyla güncellendi!" }
+  return allItems
 }

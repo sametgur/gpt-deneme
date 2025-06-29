@@ -8,14 +8,13 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { updateMenuPrices, getMenuItems } from "@/actions/menu"
-import { useToast } from "@/hooks/use-toast" // Import useToast hook
-import type { MenuItem } from "@/lib/menu-data" // MenuItem tipini içe aktar
+import { useToast } from "@/hooks/use-toast"
+import type { MenuItem } from "@/lib/menu-data"
 
 export default function DashboardPage() {
   const [currentMenuData, setCurrentMenuData] = useState<MenuItem[]>([])
-  const { toast } = useToast() // Get the toast function from the hook
+  const { toast } = useToast()
 
-  // useActionState hook'unu doğru şekilde kullanın
   const [state, formAction, isPending] = React.useActionState(async (previousState: any, formData: FormData) => {
     const updatedPrices: { id: string; price: number }[] = []
     formData.forEach((value, key) => {
@@ -35,8 +34,7 @@ export default function DashboardPage() {
         description: result.message,
         variant: "default",
       })
-      // Fiyatlar güncellendikten sonra menü öğelerini yeniden çek
-      fetchMenuData()
+      fetchMenuData() // Fiyatlar güncellendikten sonra menü öğelerini yeniden çek
     } else {
       toast({
         title: "Hata!",
@@ -45,7 +43,7 @@ export default function DashboardPage() {
       })
     }
     return result
-  }, null) // Initial state for useActionState
+  }, null)
 
   const fetchMenuData = async () => {
     try {
@@ -90,7 +88,7 @@ export default function DashboardPage() {
                 </Label>
                 <Input
                   id={`price-${item.id}`}
-                  name={`price_${item.id}`} // Name attribute for FormData
+                  name={`price_${item.id}`}
                   type="number"
                   step="0.01"
                   defaultValue={item.price}
