@@ -1,9 +1,18 @@
 import type React from "react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function DashboardPage() {
   return (
-    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-6">
+      <Card>
+        <CardHeader>
+          <CardTitle>Hoş Geldiniz!</CardTitle>
+          <CardDescription>Yönetici panelinize hoş geldiniz. Buradan uygulamanızı yönetebilirsiniz.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p>Sol menüden farklı bölümlere erişebilirsiniz.</p>
+        </CardContent>
+      </Card>
       <Card>
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle className="text-sm font-medium">Toplam Kullanıcı</CardTitle>
