@@ -1,30 +1,49 @@
 "use client"
 
-import { useState } from "react"
 import Image, { type ImageProps } from "next/image"
+import { useMemo, useState } from "react"
+import { cn } from "@/lib/utils"
 
-interface SafeImageProps extends Omit<ImageProps, "onError"> {
-  fallbackSrc?: string
+type SafeImageProps = Omit<ImageProps, "src" | "alt"> & {
+  src?: string | null
+  alt: string
+  fallbackQuery?: string
 }
 
-export default function SafeImage({ src, alt, fallbackSrc = "/placeholder.svg", ...props }: SafeImageProps) {
-  const [imgSrc, setImgSrc] = useState(src)
-  const [hasError, setHasError] = useState(false)
+/**
+ * SafeImage wraps next/image and guarantees a visible image even if the source 404s.
+ * - Uses local placeholder with a descriptive query on error or empty src
+ * - Keeps layout by preserving given props (fill or width/height)
+ */
+export default function SafeImage({
+  src,
+  alt,
+  className,
+  fallbackQuery = "turkish cuisine dish photo",
+  ...props
+}: SafeImageProps) {
+  const [error, setError] = useState(false)
 
-  const handleError = () => {
-    if (!hasError) {
-      setImgSrc(fallbackSrc)
-      setHasError(true)
+  const finalSrc = useMemo(() => {
+    if (error || !src) {
+      const w =
+        "width" in props && typeof props.width === "number" ? props.width : 600
+      const h =
+        "height" in props && typeof props.height === "number" ? props.height : 400
+      return `/placeholder.svg?height=${h}&width=${w}&query=${encodeURIComponent(
+        fallbackQuery
+      )}`
     }
-  }
+    return src
+  }, [error, src, props, fallbackQuery])
 
   return (
     <Image
       {...props}
-      src={imgSrc || "/placeholder.svg"}
+      src={finalSrc || "/placeholder.svg"}
       alt={alt}
-      onError={handleError}
-      className={`${props.className || ""} ${hasError ? "opacity-70" : ""}`}
+      className={cn("object-cover", className)}
+      onError={() => setError(true)}
     />
   )
 }
