@@ -4,6 +4,8 @@ import { Inter, Lusitana } from "next/font/google"
 import { dir } from "i18next"
 import { locales } from "@/lib/i18n"
 import { FloatingContactButtons, FloatingWhatsappButton } from "@/components/floating-contact-buttons"
+import MainHeader from "@/components/main-header"
+import Footer from "@/components/footer"
 import type { Locale } from "@/lib/i18n"
 
 import { ThemeProvider } from "@/components/theme-provider"
@@ -12,9 +14,9 @@ import "@/components/blog/styles.css"
 
 interface Props {
   children: React.ReactNode
-  params: {
+  params: Promise<{
     locale: Locale
-  }
+  }>
 }
 
 const inter = Inter({ subsets: ["latin"] })
@@ -29,12 +31,15 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
 }
 
-export default function RootLayout({ children, params: { locale } }: Props) {
+export default async function RootLayout({ children, params }: Props) {
+  const { locale } = await params
   return (
     <html lang={locale} dir={dir(locale)}>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <MainHeader locale={locale} />
           {children}
+          <Footer locale={locale} />
           <FloatingContactButtons />
           <FloatingWhatsappButton />
         </ThemeProvider>

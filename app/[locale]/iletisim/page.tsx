@@ -3,12 +3,13 @@ import { type Locale, locales } from "@/lib/i18n"
 import ContactPageClient from "./ContactPageClient"
 
 type Props = {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Ensure locale is one of the supported locales, default to 'tr' if not
-  const locale = params?.locale && ["tr", "en", "de"].includes(params.locale) ? params.locale : "tr"
+  const resolved = await params
+  const locale = resolved?.locale && ["tr", "en", "de"].includes(resolved.locale) ? resolved.locale : "tr"
 
   const title = {
     tr: "İletişim | Cennet Restaurant Akyaka",
@@ -32,6 +33,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
 }
 
-export default function ContactPage({ params }: Props) {
-  return <ContactPageClient params={params} />
+export default async function ContactPage({ params }: Props) {
+  const resolved = await params
+  return <ContactPageClient params={resolved} />
 }

@@ -77,7 +77,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
       name: locale === "tr" ? "Cips" : locale === "de" ? "Chips" : "Chips",
       description:
         locale === "tr" ? "Taze patates cipsleri" : locale === "de" ? "Frische Kartoffelchips" : "Fresh potato chips",
-      price: "300 TL",
+      price: "450 TL",
       image: "/crispy-potato-chips.png",
       category: "hot-appetizers",
     },
@@ -90,7 +90,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Große Portion Kartoffelchips"
             : "Large portion of potato chips",
-      price: "350 TL",
+      price: "500 TL",
       image: "/crispy-potato-chips.png",
       category: "hot-appetizers",
     },
@@ -103,7 +103,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Knusprige Kartoffelkroketten"
             : "Crispy potato croquettes",
-      price: "300 TL",
+      price: "400 TL",
       image: "/potato-croquettes.png",
       category: "hot-appetizers",
     },
@@ -116,7 +116,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gebackene Pilze mit Käse"
             : "Baked mushrooms with cheese",
-      price: "300 TL",
+      price: "400 TL",
       image: "/mushrooms-with-cheese.png",
       category: "hot-app-appetizers",
     },
@@ -129,7 +129,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Teigröllchen mit Pastırma ve Käse"
             : "Pastry rolls with pastırma and cheese",
-      price: "350 TL",
+      price: "400 TL",
       image: "/turkish-pacanga-pastirma-borek.png",
       category: "hot-appetizers",
     },
@@ -146,7 +146,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Reichhaltiges traditionelles türkisches Frühstück"
             : "Rich traditional Turkish breakfast spread",
-      price: "650 TL",
+      price: "850 TL",
       image: "/turkish-breakfast-plate.png",
       category: "breakfast",
       featured: true,
@@ -155,7 +155,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
       id: "breakfast-2",
       name: locale === "tr" ? "Omlet" : locale === "de" ? "Omelett" : "Omelette",
       description: locale === "tr" ? "Sade omlet" : locale === "de" ? "Einfaches Omelett" : "Plain omelette",
-      price: "300 TL",
+      price: "350 TL",
       image: "/plain-omelette.png",
       category: "breakfast",
     },
@@ -168,7 +168,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Omelett mit türkischer Wurst"
             : "Omelette with Turkish sausage",
-      price: "350 TL",
+      price: "400 TL",
       image: "/sucuk-omelette.png",
       category: "breakfast",
     },
@@ -181,7 +181,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Traditionelles Frühstücksgericht mit Tomaten, Paprika ve Eiern"
             : "Traditional breakfast dish with tomatoes, peppers and eggs",
-      price: "350 TL",
+      price: "450 TL",
       image: "/hearty-turkish-menemen.png",
       category: "breakfast",
     },
@@ -194,7 +194,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Omelett mit Käse"
             : "Omelette with cheese",
-      price: "300 TL",
+      price: "350 TL",
       image: "/turkish-cheese-omelette.png",
       category: "breakfast",
     },
@@ -207,7 +207,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Eier mit Käse"
             : "Eggs cooked with cheese",
-      price: "300 TL",
+      price: "350 TL",
       image: "/eggs-with-cheese.png",
       category: "breakfast",
     },
@@ -220,7 +220,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gebratenes Gemüse"
             : "Fried vegetables",
-      price: "400 TL",
+      price: "500 TL",
       image: "/fried-vegetables.png",
       category: "breakfast",
     },
@@ -233,7 +233,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Eier mit Kartoffeln"
             : "Eggs cooked with potatoes",
-      price: "300 TL",
+      price: "400 TL",
       image: "/eggs-with-potatoes.png",
       category: "breakfast",
     },
@@ -251,7 +251,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Spiegeleier mit Käse"
             : "Fried eggs with cheese",
-      price: "280 TL",
+      price: "350 TL",
       image: "/fried-eggs-with-cheese.png",
       category: "breakfast",
     },
@@ -273,7 +273,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Käseröllchen aus dünnem Teig"
             : "Cheese rolls in thin pastry",
-      price: "280 TL",
+      price: "350 TL",
       image: "/turkish-cheese-rolls.png",
       category: "breakfast",
     },
@@ -286,7 +286,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gegrillte türkische Wurst"
             : "Grilled Turkish sausage",
-      price: "400 TL",
+      price: "500 TL",
       image: "/turkish-sausage.png",
       category: "breakfast",
     },
@@ -299,7 +299,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Eier mit türkischer Wurst"
             : "Eggs cooked with Turkish sausage",
-      price: "450 TL",
+      price: "550 TL",
       image: "/eggs-with-sausage.png",
       category: "breakfast",
     },
@@ -307,7 +307,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
       id: "breakfast-14",
       name: locale === "tr" ? "Yumurta Haşlanmış" : locale === "de" ? "Gekochte Eier" : "Boiled Eggs",
       description: locale === "tr" ? "Haşlanmış yumurta" : locale === "de" ? "Gekochte Eier" : "Boiled eggs",
-      price: "50 TL",
+      price: "100 TL",
       image: "/boiled-eggs.png",
       category: "breakfast",
     },
@@ -324,7 +324,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Scharfe Paste aus Paprika, Tomaten und Gewürzen"
             : "Spicy paste made with peppers, tomatoes and spices",
-      price: "200 TL",
+      price: "380 TL",
       image: "/turkish-spicy-ezme.png",
       category: "cold-appetizers",
     },
@@ -337,7 +337,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Kalte Vorspeise aus Joghurt, Gurke, Knoblauch ve Minze"
             : "Cold appetizer made with yogurt, cucumber, garlic and mint",
-      price: "250 TL",
+      price: "380 TL",
       image: "/turkish-cacik.png",
       category: "cold-appetizers",
     },
@@ -350,7 +350,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Vorspeise aus Kichererbsen, Tahini, Olivenöl und Gewürzen"
             : "Appetizer made with chickpeas, tahini, olive oil and spices",
-      price: "280 TL",
+      price: "400 TL",
       image: "/turkish-hummus.png",
       category: "cold-appetizers",
     },
@@ -363,7 +363,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Vorspeise aus Joghurt und scharfem Paprika"
             : "Appetizer made with yogurt and hot peppers",
-      price: "290 TL",
+      price: "400 TL",
       image: "/atom-meze.png",
       category: "cold-appetizers",
     },
@@ -376,7 +376,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Vorspeise aus rotem Paprika, Walnüssen und Knoblauch"
             : "Appetizer made with red peppers, walnuts and garlic",
-      price: "290 TL",
+      price: "400 TL",
       image: "/pepper-tarator.png",
       category: "cold-appetizers",
     },
@@ -389,7 +389,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Vorspeise aus Spinat und Joghurt"
             : "Appetizer made with spinach and yogurt",
-      price: "280 TL",
+      price: "380 TL",
       image: "/borani-meze.png",
       category: "cold-appetizers",
     },
@@ -402,7 +402,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Brokkoli-Vorspeise mit Olivenöl"
             : "Broccoli appetizer with olive oil",
-      price: "290 TL",
+      price: "350 TL",
       image: "/broccoli-meze.png",
       category: "cold-appetizers",
     },
@@ -415,7 +415,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Schwarzaugenbohnen-Vorspeise mit Olivenöl"
             : "Black-eyed peas appetizer with olive oil",
-      price: "280 TL",
+      price: "350 TL",
       image: "/black-eyed-peas-meze.png",
       category: "cold-appetizers",
     },
@@ -428,7 +428,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Hausgemachte Paste mit speziellen Gewürzen"
             : "Homemade paste with special spices",
-      price: "280 TL",
+      price: "400 TL",
       image: "/cennet-ezmesi.png",
       category: "cold-appetizers",
     },
@@ -441,7 +441,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Reis mit speziellen Gewürzen"
             : "Rice with special spices",
-      price: "280 TL",
+      price: "350 TL",
       image: "/gypsy-rice.png",
       category: "cold-appetizers",
     },
@@ -458,7 +458,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Oktopussalat mit Olivenöl"
             : "Octopus salad with olive oil",
-      price: "850 TL",
+      price: "1.000 TL",
       image: "/char-grilled-octopus.png",
       category: "seafood-cold",
     },
@@ -471,7 +471,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Mit Zitrone und Olivenöl marinierter Wolfsbarsch"
             : "Sea bass marinated with lemon and olive oil",
-      price: "550 TL",
+      price: "600 TL",
       image: "/marinated-sea-bass.png",
       category: "seafood-cold",
     },
@@ -506,7 +506,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Sardellen mit spezieller Sauce"
             : "Anchovies prepared with special sauce",
-      price: "500 TL",
+      price: "550 TL",
       image: "/anchovies-with-sauce.png",
       category: "seafood-cold",
     },
@@ -519,7 +519,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Garnelen mit geschnittenem Gemüse"
             : "Shrimp prepared with chopped vegetables",
-      price: "700 TL",
+      price: "850 TL",
       image: "/pan-fried-shrimp.png",
       category: "seafood-cold",
     },
@@ -536,7 +536,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Knuspriger Tintenfisch, serviert mit Tartarsauce"
             : "Crispy calamari, served with tartar sauce",
-      price: "700 TL",
+      price: "850 TL",
       image: "/golden-crispy-calamari.png",
       category: "seafood-hot",
     },
@@ -549,7 +549,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "In Butter gebratene Garnelen"
             : "Shrimp cooked in butter",
-      price: "750 TL",
+      price: "900 TL",
       image: "/pan-fried-shrimp.png",
       category: "seafood-hot",
     },
@@ -562,7 +562,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gegrillter Oktopus mit Olivenöl und Zitrone"
             : "Grilled octopus with olive oil and lemon",
-      price: "900 TL",
+      price: "1.100 TL",
       image: "/char-grilled-octopus.png",
       category: "seafood-hot",
       featured: true,
@@ -576,7 +576,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Großer knuspriger Tintenfisch"
             : "Large crispy calamari",
-      price: "1400 TL",
+      price: "900 TL",
       image: "/golden-crispy-calamari.png",
       category: "seafood-hot",
     },
@@ -589,7 +589,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gegrillter Tintenfisch mit Olivenöl und Zitrone"
             : "Grilled calamari with olive oil and lemon",
-      price: "750 TL",
+      price: "900 TL",
       image: "/golden-crispy-calamari.png",
       category: "seafood-hot",
     },
@@ -602,7 +602,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gegrillte Garnelen mit Olivenöl ve Zitrone"
             : "Grilled shrimp with olive oil and lemon",
-      price: "750 TL",
+      price: "1.000 TL",
       image: "/pan-fried-shrimp.png",
       category: "seafood-hot",
     },
@@ -615,7 +615,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Eintopf mit verschiedenen Meeresfrüchten"
             : "Casserole prepared with various seafood",
-      price: "900 TL",
+      price: "1.000 TL",
       image: "/seafood-casserole.png",
       category: "seafood-hot",
     },
@@ -628,7 +628,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Knusprige Wolfsbarsch-Chips"
             : "Crispy sea bass chips",
-      price: "900 TL",
+      price: "1.500 TL",
       image: "/sea-bass-chips.png",
       category: "seafood-hot",
     },
@@ -641,7 +641,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Spezielle Meeresfrüchtemischung"
             : "Special seafood mix",
-      price: "500 TL",
+      price: "550 TL",
       image: "/ocean-delight.png",
       category: "seafood-hot",
     },
@@ -658,7 +658,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Traditioneller türkischer Salat mit Tomaten, Gurken, Paprika ve Zwiebeln"
             : "Traditional Turkish salad with tomatoes, cucumbers, peppers and onions",
-      price: "300 TL",
+      price: "450 TL - D. 500 TL",
       image: "/turkish-shepherd-salad.png",
       category: "salads",
     },
@@ -676,7 +676,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gavurdağı-Salat mit Thymian"
             : "Gavurdağı salad flavored with thyme",
-      price: "280 TL",
+      price: "500 TL - D. 550 TL",
       image: "/gavurdagi-thyme-salad.png",
       category: "salads",
     },
@@ -689,7 +689,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gemischter Salat aus verschiedenen Gemüsesorten"
             : "Mixed salad with various vegetables",
-      price: "300 TL",
+      price: "450 TL - D. 500 TL",
       image: "/turkish-fresh-salads.png",
       category: "salads",
     },
@@ -702,7 +702,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Salat mit saisonalem Gemüse"
             : "Salad prepared with seasonal vegetables",
-      price: "300 TL",
+      price: "450 TL",
       image: "/turkish-seasonal-salad.png",
       category: "salads",
     },
@@ -720,7 +720,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Rucolasalat mit Käse"
             : "Arugula salad prepared with cheese",
-      price: "325 TL",
+      price: "500 TL - D. 550 TL",
       image: "/arugula-salad-with-cheese.png",
       category: "salads",
     },
@@ -733,7 +733,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gemischter Salat mit Käse"
             : "Mixed salad prepared with cheese",
-      price: "325 TL",
+      price: "500 TL",
       image: "/mediterranean-salad-olives.png",
       category: "salads",
     },
@@ -746,7 +746,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Salat mit frischer Rucola"
             : "Salad prepared with fresh arugula",
-      price: "300 TL",
+      price: "450 TL",
       image: "/arugula-salad.png",
       category: "salads",
     },
@@ -759,7 +759,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Klassischer gemischter Salat"
             : "Classic mixed salad",
-      price: "300 TL",
+      price: "450 TL",
       image: "/classic-mixed-salad.png",
       category: "salads",
     },
@@ -772,7 +772,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Salat aus grünem Blattgemüse"
             : "Salad made from green leafy vegetables",
-      price: "300 TL",
+      price: "450 TL",
       image: "/green-salad.png",
       category: "salads",
     },
@@ -785,7 +785,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Verschiedene grüne Kräuter und Gemüse"
             : "Various green herbs and vegetables",
-      price: "200 TL",
+      price: "350 TL",
       image: "/mixed-greens.png",
       category: "salads",
     },
@@ -802,7 +802,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Gegrillte Lammfleischspieße"
             : "Grilled lamb skewers",
-      price: "750 TL",
+      price: "1.100 TL",
       image: "/turkish-lamb-skewers.png",
       category: "meat",
     },
@@ -815,7 +815,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Hausgemachte gegrillte Fleischbällchen"
             : "Homemade grilled meatballs",
-      price: "500 TL",
+      price: "750 TL",
       image: "/spiced-turkish-meatballs.png",
       category: "meat",
     },
@@ -828,7 +828,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Sauté aus geschnittenem Fleisch und Gemüse"
             : "Sauté prepared with chopped meat and vegetables",
-      price: "850 TL",
+      price: "1.200 TL - 2.300 TL",
       image: "/turkish-meat-stew.png",
       category: "meat",
     },
@@ -841,7 +841,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Grillteller mit verschiedenen Fleischsorten"
             : "Grilled plate with various types of meat",
-      price: "850 TL",
+      price: "1.300 TL",
       image: "/mixed-grill.png",
       category: "meat",
     },
@@ -859,7 +859,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Fleischbällchen mit Käse, serviert auf einem Ziegel"
             : "Meatballs served with cheese on a tile",
-      price: "400 TL",
+      price: "850 TL",
       image: "/meatballs-with-cheese-on-tile.png",
       category: "meat",
     },
@@ -868,7 +868,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
       name: locale === "tr" ? "Tavuk Izgara" : locale === "de" ? "Gegrilltes Hähnchen" : "Grilled Chicken",
       description:
         locale === "tr" ? "Izgara tavuk göğsü" : locale === "de" ? "Gegrillte Hähnchenbrust" : "Grilled chicken breast",
-      price: "500 TL",
+      price: "700 TL",
       image: "/turkish-chicken-shish-kebab.png",
       category: "meat",
     },
@@ -881,7 +881,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Sauté aus geschnittenem Hähnchen und Gemüse"
             : "Sauté prepared with chopped chicken and vegetables",
-      price: "650 TL",
+      price: "900 TL - 1.800 TL",
       image: "/chicken-saute.png",
       category: "meat",
     },
@@ -1010,7 +1010,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Kürbisdessert serviert mit Honig, Walnüssen und Sahne"
             : "Pumpkin dessert served with honey, walnuts and cream",
-      price: "220 TL",
+      price: "450 TL",
       image: "/turkish-pumpkin-dessert.png",
       category: "desserts",
     },
@@ -1023,7 +1023,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Traditionelles türkisches Dessert mit dünnem Teig, Pistazien ve Sahne"
             : "Traditional Turkish dessert made with thin phyllo dough, pistachios and cream",
-      price: "300 TL",
+      price: "550 TL",
       image: "/turkish-katmer-dessert.png",
       category: "desserts",
     },
@@ -1036,7 +1036,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Quittendessert serviert mit Sahne"
             : "Quince dessert served with cream",
-      price: "220 TL",
+      price: "450 TL",
       image: "/quince-dessert.png",
       category: "desserts",
     },
@@ -1045,7 +1045,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
       name: locale === "tr" ? "Dilim Helva" : locale === "de" ? "Helva-Scheibe" : "Slice of Halva",
       description:
         locale === "tr" ? "Tahin helvası dilimi" : locale === "de" ? "Scheibe Tahini-Helva" : "Slice of tahini halva",
-      price: "100 TL",
+      price: "250 TL",
       image: "/slice-of-halva.png",
       category: "desserts",
     },
@@ -1058,7 +1058,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Im Ofen gebackenes Helva"
             : "Halva baked in the oven",
-      price: "250 TL",
+      price: "500 TL",
       image: "/baked-halva.png",
       category: "desserts",
     },
@@ -1071,7 +1071,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Feigendessert serviert mit Sahne"
             : "Fig dessert served with cream",
-      price: "220 TL",
+      price: "450 TL",
       image: "/fig-dessert.png",
       category: "desserts",
     },
@@ -1130,7 +1130,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
       id: "fruit-1",
       name: locale === "tr" ? "Meyve Tabağı" : locale === "de" ? "Obstteller" : "Fruit Plate",
       description: locale === "tr" ? "Mevsim meyveleri" : locale === "de" ? "Saisonale Früchte" : "Seasonal fruits",
-      price: "350 TL",
+      price: "450 TL",
       image: "/turkish-seasonal-fruit-plate.png",
       category: "fruits",
     },
@@ -1143,7 +1143,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Banane serviert mit Honig"
             : "Banana served with honey",
-      price: "300 TL",
+      price: "400 TL",
       image: "/honey-banana.png",
       category: "fruits",
     },
@@ -1151,7 +1151,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
       id: "fruit-3",
       name: locale === "tr" ? "Kızık Ayva" : locale === "de" ? "Gebratene Quitte" : "Roasted Quince",
       description: locale === "tr" ? "Kızartılmış ayva" : locale === "de" ? "Gebratene Quitte" : "Roasted quince",
-      price: "300 TL",
+      price: "400 TL",
       image: "/roasted-quince.png",
       category: "fruits",
     },
@@ -1160,7 +1160,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
       name: locale === "tr" ? "Meyve (D)" : locale === "de" ? "Obst (D)" : "Fruit (D)",
       description:
         locale === "tr" ? "Büyük boy meyve porsiyonu" : locale === "de" ? "Große Obstportion" : "Large fruit portion",
-      price: "450 TL",
+      price: "600 TL",
       image: "/large-fruit-portion.png",
       category: "fruits",
     },
@@ -1194,7 +1194,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "20 Cl Flasche Yeni Rakı"
             : "20 Cl bottle of Yeni Raki",
-      price: "700 TL",
+      price: "850 TL",
       image: "/yeni-raki-20cl.png",
       category: "alcoholic",
     },
@@ -1207,7 +1207,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "35 Cl Flasche Yeni Rakı"
             : "35 Cl bottle of Yeni Raki",
-      price: "1000 TL",
+      price: "1.050 TL",
       image: "/yeni-raki-35cl.png",
       category: "alcoholic",
     },
@@ -1220,7 +1220,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "50 Cl Flasche Yeni Rakı"
             : "50 Cl bottle of Yeni Raki",
-      price: "1400 TL",
+      price: "1.400 TL",
       image: "/yeni-raki-50cl.png",
       category: "alcoholic",
     },
@@ -1233,7 +1233,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "70 Cl Flasche Yeni Rakı"
             : "70 Cl bottle of Yeni Raki",
-      price: "1700 TL",
+      price: "1.800 TL",
       image: "/yeni-raki-70cl.png",
       category: "alcoholic",
     },
@@ -1246,7 +1246,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "100 Cl Flasche Yeni Rakı"
             : "100 Cl bottle of Yeni Raki",
-      price: "2400 TL",
+      price: "2.400 TL",
       image: "/yeni-raki-100cl.png",
       category: "alcoholic",
     },
@@ -1271,7 +1271,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
       id: "wine-1",
       name: locale === "tr" ? "Şarap" : locale === "de" ? "Wein" : "Wine",
       description: locale === "tr" ? "Kadeh şarap" : locale === "de" ? "Glas Wein" : "Glass of wine",
-      price: "300 TL",
+      price: "500 TL",
       image: "/glass-of-wine.png",
       category: "wines",
     },
@@ -1323,7 +1323,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Traditionell gebrühter türkischer Tee"
             : "Traditional brewed Turkish tea",
-      price: "15 TL",
+      price: "50 TL",
       image: "/turkish-tea-glass.png",
       category: "drinks",
     },
@@ -1336,7 +1336,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Traditioneller türkischer Kahve, serviert mit Lokum"
             : "Traditional Turkish coffee, served with Turkish delight",
-      price: "30 TL",
+      price: "150 TL",
       image: "/turkish-coffee-delight.png",
       category: "drinks",
     },
@@ -1349,7 +1349,7 @@ export default function MenuClientPage({ locale }: MenuClientPageProps) {
           : locale === "de"
             ? "Traditionelles türkisches Joghurtgetränk"
             : "Traditional Turkish yogurt drink",
-      price: "20 TL",
+      price: "80 TL",
       image: "/turkish-ayran.png",
       category: "drinks",
     },

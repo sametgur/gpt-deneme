@@ -69,8 +69,8 @@ export default function BlogClientPage({ posts, categories, locale }: BlogClient
           <div className="md:col-span-3">
             {filteredPosts && filteredPosts.length > 0 ? (
               <div className="space-y-8">
-                {filteredPosts.map((post) => (
-                  <div key={post.id} className="bg-white rounded-lg shadow-sm overflow-hidden">
+                {filteredPosts.map((post, idx) => (
+                  <div key={post.id ?? post.slug ?? idx} className="bg-white rounded-lg shadow-sm overflow-hidden">
                     <Link href={`/${locale}/blog/${post.slug}`} className="group">
                       <div className="md:flex">
                         <div className="md:w-1/3 relative h-48 md:h-auto">

@@ -3,11 +3,12 @@ import VibrantAboutPage from "./VibrantAboutPage"
 import type { Locale } from "@/lib/i18n"
 
 type Props = {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }
 
-export default function AboutPage({ params }: Props) {
-  return <VibrantAboutPage params={params} />
+export default async function AboutPage({ params }: Props) {
+  const resolved = await params
+  return <VibrantAboutPage params={resolved} />
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

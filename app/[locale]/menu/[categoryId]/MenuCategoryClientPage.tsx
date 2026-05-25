@@ -5,8 +5,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Search } from "lucide-react"
 import { type Locale, getPathWithLocale } from "@/lib/i18n"
-import { MainHeader } from "@/components/main-header"
-import { Footer } from "@/components/footer"
 
 // Menu categories data
 const menuCategories = [
@@ -237,7 +235,7 @@ const menuItems = {
       name: {
         tr: "Peynirli Omlet",
         en: "Cheese Omelette",
-        de: "Käse-Omelett",
+        de: "K��se-Omelett",
       },
       description: {
         tr: "Beyaz peynir ile hazırlanan omlet",
@@ -648,7 +646,6 @@ export default function MenuCategoryClientPage({ params }: Props) {
   if (!category) {
     return (
       <div className="min-h-screen flex flex-col">
-        <MainHeader locale={locale} />
         <div className="container mx-auto px-4 py-8 flex-grow">
           <div className="text-center py-12">
             <h1 className="text-3xl font-bold mb-4">
@@ -667,14 +664,12 @@ export default function MenuCategoryClientPage({ params }: Props) {
             </Link>
           </div>
         </div>
-        <Footer locale={locale} />
       </div>
     )
   }
 
   return (
     <div className="min-h-screen flex flex-col">
-      <MainHeader locale={locale} />
       <div className="container mx-auto px-4 py-8 flex-grow">
         <div className="mb-8">
           <Link
@@ -758,7 +753,6 @@ export default function MenuCategoryClientPage({ params }: Props) {
           </div>
         )}
       </div>
-      <Footer locale={locale} />
     </div>
   )
 }

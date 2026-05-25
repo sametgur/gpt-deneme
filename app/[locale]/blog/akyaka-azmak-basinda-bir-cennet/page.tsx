@@ -2,8 +2,6 @@ import { notFound } from "next/navigation"
 import type { Locale } from "@/lib/i18n"
 import { getPostBySlug, getRelatedPosts } from "@/lib/blog-data"
 import BlogPostClientPage from "../[slug]/BlogPostClientPage"
-import MainHeader from "@/components/main-header"
-import Footer from "@/components/footer"
 import type { Metadata } from "next"
 
 type Props = {
@@ -76,11 +74,5 @@ export default async function AkyakaAzmakBasindaBirCennetPage({ params }: Props)
   // İlgili yazıları getir
   const relatedPosts = await getRelatedPosts(post, locale)
 
-  return (
-    <>
-      <MainHeader locale={locale} />
-      <BlogPostClientPage post={post} relatedPosts={relatedPosts || []} />
-      <Footer locale={locale} />
-    </>
-  )
+  return <BlogPostClientPage post={post} relatedPosts={relatedPosts || []} />
 }

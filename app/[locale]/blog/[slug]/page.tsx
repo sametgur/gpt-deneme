@@ -4,14 +4,15 @@ import BlogPostClientPage from "./BlogPostClientPage"
 import { notFound } from "next/navigation"
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
     locale: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post = await getBlogPostBySlug(params.slug)
+  const { slug, locale } = await params
+  const post = await getBlogPostBySlug(slug)
 
   if (!post) {
     return {
@@ -21,9 +22,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 
   const title =
-    typeof post.title === "object" ? post.title[params.locale] || post.title.en || post.title.tr : post.title
+    typeof post.title === "object" ? post.title[locale] || post.title.en || post.title.tr : post.title
   const excerpt =
-    typeof post.excerpt === "object" ? post.excerpt[params.locale] || post.excerpt.en || post.excerpt.tr : post.excerpt
+    typeof post.excerpt === "object" ? post.excerpt[locale] || post.excerpt.en || post.excerpt.tr : post.excerpt
 
   return {
     title: `${title} | Cennet Restaurant`,
@@ -44,7 +45,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = await getBlogPostBySlug(params.slug)
+  const { slug } = await params
+  const post = await getBlogPostBySlug(slug)
 
   if (!post) {
     notFound()

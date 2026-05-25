@@ -4,8 +4,6 @@ import { MapPin, Clock, Phone, Mail, Instagram, Facebook, Twitter, Send } from "
 import type { Locale } from "@/lib/i18n"
 import { motion } from "framer-motion"
 
-import MainHeader from "@/components/main-header"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 
 type Props = {
@@ -96,8 +94,6 @@ export default function ContactPageClient({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <MainHeader />
-
       {/* Page Header */}
       <section className="relative pt-24">
         <div className="relative h-[50vh] w-full overflow-hidden">
@@ -246,8 +242,6 @@ export default function ContactPageClient({ params }: Props) {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }
