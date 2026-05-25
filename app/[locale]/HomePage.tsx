@@ -16,7 +16,7 @@ interface HomePageProps {
 
 export default function HomePage({ locale }: HomePageProps) {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden -mt-20">
       <HeroSection locale={locale} />
       <MenuShowcase locale={locale} />
       <FeaturedDishes locale={locale} />

@@ -38,7 +38,7 @@ export default async function RootLayout({ children, params }: Props) {
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <MainHeader locale={locale} />
-          {children}
+          <main className="pt-20">{children}</main>
           <Footer locale={locale} />
           <FloatingContactButtons />
           <FloatingWhatsappButton />
