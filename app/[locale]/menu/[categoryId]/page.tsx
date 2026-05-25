@@ -177,11 +177,11 @@ const menuCategories = [
 ]
 
 type Props = {
-  params: { categoryId: string; locale: Locale }
+  params: Promise<{ categoryId: string; locale: Locale }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { categoryId, locale } = params
+  const { categoryId, locale } = await params
   const category = menuCategories.find((c) => c.id.toString() === categoryId)
 
   return {
@@ -190,6 +190,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function MenuCategoryPage({ params }: Props) {
-  return <MenuCategoryClientPage params={params} />
+export default async function MenuCategoryPage({ params }: Props) {
+  const resolved = await params
+  return <MenuCategoryClientPage params={resolved} />
 }

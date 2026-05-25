@@ -3,15 +3,15 @@ import { type Locale, locales } from "@/lib/i18n"
 import HomePage from "./HomePage"
 
 type Props = {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const locale = params.locale
+  const { locale } = await params
 
   const title = {
     tr: "Cennet Restaurant Akyaka | Eşsiz Deniz Ürünleri ve Türk Mutfağı",
-    en: 'Cennet Restaurant Akyaka | Unique Seafood and Turkish Cuisine",yaka | Unique Seafood and Turkish Cuisine',
+    en: "Cennet Restaurant Akyaka | Unique Seafood and Turkish Cuisine",
     de: "Cennet Restaurant Akyaka | Einzigartige Meeresfrüchte und Türkische Küche",
   }
 
@@ -47,6 +47,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
 }
 
-export default function LocalizedHomePage({ params }: Props) {
-  return <HomePage locale={params.locale} />
+export default async function LocalizedHomePage({ params }: Props) {
+  const { locale } = await params
+  return <HomePage locale={locale} />
 }

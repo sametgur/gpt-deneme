@@ -8,6 +8,7 @@ type SafeImageProps = Omit<ImageProps, "src" | "alt"> & {
   src?: string | null
   alt: string
   fallbackQuery?: string
+  fallbackSrc?: string
 }
 
 /**
@@ -20,12 +21,14 @@ export default function SafeImage({
   alt,
   className,
   fallbackQuery = "turkish cuisine dish photo",
+  fallbackSrc,
   ...props
 }: SafeImageProps) {
   const [error, setError] = useState(false)
 
   const finalSrc = useMemo(() => {
     if (error || !src) {
+      if (fallbackSrc) return fallbackSrc
       const w =
         "width" in props && typeof props.width === "number" ? props.width : 600
       const h =
@@ -35,7 +38,7 @@ export default function SafeImage({
       )}`
     }
     return src
-  }, [error, src, props, fallbackQuery])
+  }, [error, src, props, fallbackQuery, fallbackSrc])
 
   return (
     <Image

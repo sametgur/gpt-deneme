@@ -5,11 +5,11 @@ import MainHeader from "@/components/main-header"
 import Footer from "@/components/footer"
 
 type Props = {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const locale = params.locale
+  const { locale } = await params
 
   const title = {
     tr: "Menümüz | Cennet Restaurant Akyaka",
@@ -33,12 +33,13 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
 }
 
-export default function MenuPage({ params }: Props) {
+export default async function MenuPage({ params }: Props) {
+  const { locale } = await params
   return (
     <div className="min-h-screen bg-white">
-      <MainHeader locale={params.locale} />
-      <MenuClientPage locale={params.locale} />
-      <Footer locale={params.locale} />
+      <MainHeader locale={locale} />
+      <MenuClientPage locale={locale} />
+      <Footer locale={locale} />
     </div>
   )
 }

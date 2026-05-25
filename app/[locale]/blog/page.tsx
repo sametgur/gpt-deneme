@@ -6,19 +6,20 @@ import MainHeader from "@/components/main-header"
 import Footer from "@/components/footer"
 
 interface BlogPageProps {
-  params: {
+  params: Promise<{
     locale: Locale
-  }
+  }>
 }
 
 interface Props {
-  params: {
+  params: Promise<{
     locale: Locale
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: BlogPageProps) {
-  const dict = await getDictionary(params.locale)
+  const { locale } = await params
+  const dict = await getDictionary(locale)
 
   return {
     title: `${dict.blog.title} | Cennet Restaurant Akyaka`,
@@ -27,14 +28,15 @@ export async function generateMetadata({ params }: BlogPageProps) {
 }
 
 export default async function BlogPage({ params }: Props) {
-  const posts = await getAllPosts(params.locale)
-  const categories = await getCategories(params.locale)
+  const { locale } = await params
+  const posts = await getAllPosts(locale)
+  const categories = await getCategories(locale)
 
   return (
     <>
-      <MainHeader locale={params.locale} />
-      <BlogClientPage posts={posts} categories={categories} locale={params.locale} />
-      <Footer locale={params.locale} />
+      <MainHeader locale={locale} />
+      <BlogClientPage posts={posts} categories={categories} locale={locale} />
+      <Footer locale={locale} />
     </>
   )
 }

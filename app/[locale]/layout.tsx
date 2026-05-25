@@ -12,9 +12,9 @@ import "@/components/blog/styles.css"
 
 interface Props {
   children: React.ReactNode
-  params: {
+  params: Promise<{
     locale: Locale
-  }
+  }>
 }
 
 const inter = Inter({ subsets: ["latin"] })
@@ -29,7 +29,8 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
 }
 
-export default function RootLayout({ children, params: { locale } }: Props) {
+export default async function RootLayout({ children, params }: Props) {
+  const { locale } = await params
   return (
     <html lang={locale} dir={dir(locale)}>
       <body className={inter.className}>
