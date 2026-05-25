@@ -20,7 +20,7 @@ const aboutTranslations = {
     "about.tabs.values": "Değerlerimiz",
     "about.story.title": "Hikayemiz",
     "about.story.p1":
-      "Cennet Restaurant, 1995 yılında Akyaka'nın eşsiz doğal güzellikleri içerisinde, Azmak Nehri'nin kıyısında kurulmuştur. Kurucumuz Kemal Şahin, deniz ürünlerine olan tutkusu ve misafirperverliği ile kısa sürede bölgenin en sevilen restoranlarından biri haline gelmiştir.",
+      "Cennet Restaurant, 1983 yılında Akyaka'nın eşsiz doğal güzellikleri içerisinde, Azmak Nehri'nin kıyısında kurulmuştur. 40 yılı aşkın deneyimimizle, deniz ürünlerine olan tutkumuz ve misafirperverliğimiz ile bölgenin en sevilen restoranlarından biri haline geldik.",
     "about.story.p2":
       "Yıllar içinde büyüyen ve gelişen restoranımız, bugün ikinci ve üçüncü nesil aile üyeleri tarafından aynı özen ve tutkuyla işletilmeye devam etmektedir.",
     "about.mission.title": "Misyonumuz",
@@ -69,7 +69,7 @@ const aboutTranslations = {
     "about.tabs.values": "Our Values",
     "about.story.title": "Our Story",
     "about.story.p1":
-      "Cennet Restaurant was established in 1995 on the banks of the Azmak River, amidst the unique natural beauty of Akyaka. Our founder, Kemal Şahin, quickly made it one of the most beloved restaurants in the region with his passion for seafood and hospitality.",
+      "Cennet Restaurant was established in 1983 on the banks of the Azmak River, amidst the unique natural beauty of Akyaka. With over 40 years of experience, our passion for seafood and hospitality has made us one of the most beloved restaurants in the region.",
     "about.story.p2":
       "Our restaurant, which has grown and developed over the years, continues to be operated with the same care and passion by second and third generation family members today.",
     "about.mission.title": "Our Mission",
@@ -118,7 +118,7 @@ const aboutTranslations = {
     "about.tabs.values": "Unsere Werte",
     "about.story.title": "Unsere Geschichte",
     "about.story.p1":
-      "Das Cennet Restaurant wurde 1995 am Ufer des Azmak-Flusses inmitten der einzigartigen Naturschönheit von Akyaka gegründet. Unser Gründer, Kemal Şahin, machte es mit seiner Leidenschaft für Meeresfrüchte und Gastfreundschaft schnell zu einem der beliebtesten Restaurants der Region.",
+      "Das Cennet Restaurant wurde 1983 am Ufer des Azmak-Flusses inmitten der einzigartigen Naturschönheit von Akyaka gegründet. Mit über 40 Jahren Erfahrung hat uns unsere Leidenschaft für Meeresfrüchte und Gastfreundschaft zu einem der beliebtesten Restaurants der Region gemacht.",
     "about.story.p2":
       "Unser Restaurant, das im Laufe der Jahre gewachsen und sich entwickelt hat, wird heute mit der gleichen Sorgfalt und Leidenschaft von Familienmitgliedern der zweiten und dritten Generation weitergeführt.",
     "about.mission.title": "Unsere Mission",
