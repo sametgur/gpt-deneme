@@ -3,8 +3,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { CalendarDays, Clock, User } from "lucide-react"
 
-import MainHeader from "@/components/main-header"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { defaultLocale } from "@/lib/i18n"
 import { getDictionary } from "@/lib/i18n"
@@ -26,8 +24,6 @@ export default async function AkyakaEnIyiRestorantBlog({ params }: { params: { l
 
   return (
     <div className="min-h-screen bg-white">
-      <MainHeader locale={defaultLocale} />
-
       {/* Blog Header */}
       <section className="relative pt-24">
         <div className="relative h-[50vh] w-full">
@@ -377,8 +373,6 @@ export default async function AkyakaEnIyiRestorantBlog({ params }: { params: { l
           </div>
         </div>
       </section>
-
-      <Footer locale={defaultLocale} />
     </div>
   )
 }

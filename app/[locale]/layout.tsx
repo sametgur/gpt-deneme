@@ -4,6 +4,8 @@ import { Inter, Lusitana } from "next/font/google"
 import { dir } from "i18next"
 import { locales } from "@/lib/i18n"
 import { FloatingContactButtons, FloatingWhatsappButton } from "@/components/floating-contact-buttons"
+import MainHeader from "@/components/main-header"
+import Footer from "@/components/footer"
 import type { Locale } from "@/lib/i18n"
 
 import { ThemeProvider } from "@/components/theme-provider"
@@ -35,7 +37,9 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale} dir={dir(locale)}>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <MainHeader locale={locale} />
           {children}
+          <Footer locale={locale} />
           <FloatingContactButtons />
           <FloatingWhatsappButton />
         </ThemeProvider>

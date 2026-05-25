@@ -1,8 +1,6 @@
 import type { Metadata } from "next"
 import { type Locale, locales } from "@/lib/i18n"
 import MenuClientPage from "./MenuClientPage"
-import MainHeader from "@/components/main-header"
-import Footer from "@/components/footer"
 
 type Props = {
   params: Promise<{ locale: Locale }>
@@ -37,9 +35,7 @@ export default async function MenuPage({ params }: Props) {
   const { locale } = await params
   return (
     <div className="min-h-screen bg-white">
-      <MainHeader locale={locale} />
       <MenuClientPage locale={locale} />
-      <Footer locale={locale} />
     </div>
   )
 }

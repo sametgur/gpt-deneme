@@ -4,8 +4,6 @@ import type { Locale } from "@/lib/i18n"
 import { translations } from "@/lib/i18n/translations"
 import { motion } from "framer-motion"
 
-import MainHeader from "@/components/main-header"
-import Footer from "@/components/footer"
 import GalleryComponent from "@/components/gallery-component"
 
 type Props = {
@@ -18,8 +16,6 @@ export default function GalleryClientPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
-      <MainHeader />
-
       {/* Page Header */}
       <section className="relative pt-24">
         <div className="relative h-[50vh] w-full overflow-hidden">
@@ -112,8 +108,6 @@ export default function GalleryClientPage({ params }: Props) {
           <GalleryComponent locale={locale} />
         </div>
       </section>
-
-      <Footer locale={locale} />
     </div>
   )
 }

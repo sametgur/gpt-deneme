@@ -2,8 +2,6 @@ import { getAllPosts, getCategories } from "@/lib/blog-data"
 import type { Locale } from "@/lib/i18n"
 import { getDictionary } from "@/lib/dictionary"
 import BlogClientPage from "./BlogClientPage"
-import MainHeader from "@/components/main-header"
-import Footer from "@/components/footer"
 
 interface BlogPageProps {
   params: Promise<{
@@ -32,11 +30,5 @@ export default async function BlogPage({ params }: Props) {
   const posts = await getAllPosts(locale)
   const categories = await getCategories(locale)
 
-  return (
-    <>
-      <MainHeader locale={locale} />
-      <BlogClientPage posts={posts} categories={categories} locale={locale} />
-      <Footer locale={locale} />
-    </>
-  )
+  return <BlogClientPage posts={posts} categories={categories} locale={locale} />
 }
